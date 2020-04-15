@@ -16,4 +16,8 @@ public extension String {
     func toFloat() -> Float? {
         return Float(self)
     }
+    
+    func trim() -> String {
+        return trimmingCharacters(in: .whitespacesAndNewlines)
+    }
 }
